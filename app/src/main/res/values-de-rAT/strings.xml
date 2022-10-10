@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoolDroid</string>
+    <string name="txt_dont_touch">Greif mi net an</string>
+    <string name="text_view_numbers">"Du hast mi %1$d moi angegriffen"</string>
+    <string name="once">ein moi</string>
+    <string name="twice">zwa moi</string>
+</resources>
