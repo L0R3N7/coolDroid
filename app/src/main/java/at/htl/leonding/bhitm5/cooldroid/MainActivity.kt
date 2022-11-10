@@ -17,13 +17,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Logic
-        textViewDroid.text = "New Way"
+        textViewDroid.text = getString(R.string.txt_dont_touch)
 
         if (savedInstanceState != null){
             counter = savedInstanceState.getInt(COUNTER);
             textViewDroid.text = getMessageText();
         }
-
 
         imageViewDroid.setOnClickListener{
             counter++
@@ -32,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getMessageText() =
+    private fun getMessageText() : String =
         when (counter) {
             1 -> getString(R.string.once)
             2 -> getString(R.string.twice)
